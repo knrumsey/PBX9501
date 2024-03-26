@@ -4,7 +4,7 @@ library(stargazer)
 library(fields)
 tr <- function(M) sum(diag(M))
 
-jacket_materials <- c("copper", "tungsten", "ss304", "gold", "gold_5cu",
+jacket_materials <- jacket_names <- c("copper", "tungsten", "ss304", "gold", "gold_5cu",
                       "uranium_5mo", "nickel", "uranium_075ti", "al6061",
                       "uranium", "ss250", "tin", "ss4340", "al7075")
 fnames <- unlist(lapply(1:14, function(zz) paste0(jacket_materials[zz],".csv")))
